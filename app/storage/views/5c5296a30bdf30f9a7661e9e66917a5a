@@ -1,0 +1,10 @@
+
+<?php $__env->startSection('container'); ?>
+	<h1>my awesome site</h1>
+	<?php echo Form::open(array('url'=>' ')); ?>
+		<?php echo Form::text('url'); ?>
+		<?php echo Form::submit('Shorten'); ?>
+	<?php echo Form::close(); ?>
+	<?php echo $errors->first('url','<p class="error">:message</p>'); ?>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

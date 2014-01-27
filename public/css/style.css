@@ -1,0 +1,527 @@
+.container-hemis{
+	width:100%;
+	display: block;
+}
+.main-header{
+	position: relative;
+	width: 100%;
+	min-height: 39px;
+	z-index: 1000;
+}
+.fixheda {
+	width: inherit;
+	position: fixed;
+	top:0;
+}
+.userheda{
+background: #0071FF;
+border-bottom: 1px solid #e5e5e5;
+color:#fff;
+/*margin-top: -10px;*/
+height: 40px;
+}
+.userheda > div.hedacont > ul.navigation, .userheda > div.hedacont > div#user_options{
+	display: inline;
+}
+.navigation{
+	display:block;
+	font-size: 14px;
+	overflow: hidden;
+	margin-left: 0;
+	/*height: inherit;*/
+	width: 430px;
+}
+.navigation > li{
+	list-style: none;
+	text-transform: capitalize;
+	float: left;
+	display: block;
+	margin: 0 8px;
+}
+.navigation > li > a {
+	color:#ebebeb;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: small;
+	font-family: helvetica;
+}
+#here{
+	color: white;
+}
+.lt{
+	padding-top: 3px;
+	display: block;
+}
+.light{
+	display:block;
+	height: 2px;	
+}
+.light-active{
+	background:#14D5FF;
+	-webkit-box-shadow: 9px 9px 24px #14D5FF;
+	-moz-box-shadow: 9px 9px 24px #14D5FF;
+	box-shadow: 9px 9px 24px #14D5FF;
+}
+.navigation > li > a > span.lt:hover{
+	color: white;
+}
+
+#user_options a.usrname{
+	color: white;
+}
+#user_options a b.caret{
+	margin-top: 9px;
+}
+.hedacont{
+	margin:0 20px;
+}
+#first{
+	margin:0;
+}
+#scopebar{
+	background: #fff;
+	border: 1px solid #e1e1e1;
+}
+.fixheda_style{
+  display: block;
+  /*margin: 0 0 10px;*/
+  font-size: 12px;
+  line-height: 20px;
+  word-break: break-all;
+  word-wrap: break-word;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  font-weight: bold;
+}
+.acctheda{
+	clear: both;
+	margin-top: 0;
+}
+#user_options .nav li.dropdown > .dropdown-toggle .caret {
+border-top-color: white;
+border-bottom-color: white;
+}
+#user_options .nav li.dropdown.open > .dropdown-toggle{
+	background:#14D5FF;
+}
+.acctheda .navbar-inner {
+	padding: 0;
+}
+.content{
+	padding:5px;
+	margin: 20px;
+	border:1px solid #ddd;
+-webkit-box-shadow: -1px -1px 15px #e1e1e1;
+-moz-box-shadow: -1px -1px 15px #e1e1e1;
+box-shadow: -1px -1px 15px #e1e1e1;
+}
+.wrapper{
+	border: 1px solid #e1e1e1;
+	padding: 4px;
+	display: block;
+	overflow: hidden;
+	margin: 100px 20px 20px 20px;
+	background: white;
+}
+.scope{
+	display: block;
+}
+.top_bar_up > span{
+	text-transform: uppercase;
+}
+.top_bar_up > b{
+	text-transform: capitalize;
+	font-size: 16px;
+}
+.top_bar_down{
+	
+}
+
+.content > .header >.schoolheader {
+position: relative;
+background: white;
+/*border: 5px solid #0071FF;*/
+/*background: red;*/
+margin: 10px 0;
+}
+.buttondrops{
+	display: inline-block;
+direction: ltr;
+float: right;
+margin: -41px 133px;
+}
+
+.roundcorners{
+	-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+}
+.school_details_sumarry {
+
+}
+.school_details_sumarry > strong{
+	margin:0 23px 0 0;
+}
+.school_details_sumarry > small{
+	text-transform: uppercase;
+	font-weight: normal;
+}
+.schoolcontent > .header{
+	padding:6px;
+}
+.school_display{
+	padding:4px;
+}
+.school_nav_content{
+border-top: none;
+margin: -20px 0 0 0;
+padding:8px;
+overflow: hidden;
+}
+.bs-docs-example {
+position: relative;
+margin: 15px 0;
+padding: 39px 19px 14px;
+background-color: #fff;
+border: 1px solid #ddd;
+
+}
+.bs-docs-example:after {
+content: "main person";
+position: absolute;
+top: -1px;
+left: -1px;
+padding: 3px 7px;
+font-size: 12px;
+font-weight: bold;
+background-color: #f5f5f5;
+border: 1px solid #ddd;
+color: #9da0a4;
+}
+.icons_zone{
+	overflow: hidden;
+}
+.icons_zone > p {
+	display:inline;
+	padding:10px;
+	float: left;
+	margin: 10px 30px;
+	text-align: center;
+	/*all text are align center could be a problem*/
+}
+.imgthumb{
+display: block;
+margin: 4px;
+
+}
+.shapey{
+border-bottom: 30px solid #0071FF;
+border-right: 30px solid transparent;
+color: white;
+display: inline-block;
+font-weight: bold;
+height: 0;
+line-height: 48px;
+padding: 10px;
+text-decoration: none;	
+}
+ul.allschool {
+	font-weight: normal;
+}
+ul.allschool li {
+	list-style: none;
+}
+/*
+below we are styling for the add school zone
+
+*/
+.adding form{
+	padding:11px;
+}
+.adding span{
+	font-weight: normal;
+	display: inline;
+	margin-right: 10px;
+}
+.school-name{
+	padding-right: 134px;
+}
+.entrollment{
+	padding-right:84px;
+}
+.ownership{
+	padding-right:146px;
+}
+.lcenter-type{
+	padding-right:38px;
+}
+.addr-street{
+	padding-right:179px;
+}
+.addr-town{
+	padding-right:177px;
+}
+.addr-region{
+	padding-right:38px;
+}
+.cont-email{
+	padding-right:179px;
+}
+.cont-tele{
+	padding-right:148px;
+}
+.cont-mobile{
+	padding-right:168px;
+}
+.cont-website{
+	padding-right:100px;
+}
+.action-td > a {
+	padding: 2px;
+	margin: -5px 18px;
+}
+.action-td  img:hover{
+	background:white;
+}
+
+.maked {
+background: #dff0d8;
+}
+.title-header > h2{
+	display:inline;
+}
+.title-header > div.filtering {
+	float: right;
+}
+.bottom-contact{
+	float:left;
+	display: inline;
+	padding:10px;
+	margin-right:12px;
+}
+.nation{
+padding-right:148px;
+}
+.gender{
+padding-right:148px;
+}
+.enthnic{
+padding-right:148px;	
+}
+.town{
+	padding-right:188px;
+}
+.district{
+	padding-right:165px;
+}
+.box{
+	padding-right:165px;
+}
+.street{
+	padding-right:174px;
+}
+.region{
+	padding-right:148px;
+}
+.classname{
+	padding-right:148px;
+}
+
+
+.staff-edate{
+	padding-right:10px;
+}
+.staff-rank{
+	padding-right:150px;
+	margin-left: 110px;
+}
+.staff-employ{
+	padding-right:106px;
+}
+.staff-role{
+	padding-right:148px;
+}
+.staff-status{
+	padding-right:148px;
+}
+
+.staff-hquali{
+	padding-right:57px;
+}
+.staff-oquali{
+	padding-right:92px;
+}
+.staff-fieldt{
+	padding-right:92px;
+}
+.staff-levelt{
+	padding-right:88px;
+}
+.staff-year{
+	padding-right:148px;
+}
+.class-name{
+	padding-right:100px;
+}
+.class-fee{
+	padding-right:148px;
+}
+
+.class-award{
+	padding-right:171px;
+}
+.class-year{
+	padding-right:92px;
+}
+.class-quali{
+	padding-right:104px;
+}
+.class-status{
+	padding-right:171px;
+}
+.class-lc{
+	padding-right:148px;
+}
+a.get-out{
+		color: white;
+	float: right;
+	display: inline;
+	font-weight: normal;
+	text-decoration: none;
+}
+.signin{
+margin: 0 auto;
+display: block;
+overflow: hidden;
+width: 498px;
+
+}
+.signin form{
+	margin: 0;
+}
+.pack-style{
+	margin: 10px 5px;
+}
+.pack-style p.help-block {
+	margin: 5px 0 18px 3px;
+	font-weight: normal;
+}
+.pack-style input, .pack-style span.on {
+	/*height:32px;*/
+	line-height: 2em;
+}
+.pack-style select {
+	/*height: 42px;*/
+}
+#myModal span{
+	font-weight: normal;
+}
+.staff-hquali{
+	padding-right:57px;
+}
+div.student_modal .town{
+	padding-right:192px;
+}
+div.student_modal .bday{
+padding-right:136px;
+}
+div.student_modal .enthnic{
+	padding-right:161px;
+}
+div.student_modal .nation{
+padding-right:136px;
+}
+div.student_modal .gender{
+padding-right:136px;
+}
+div.student_modal .box{
+padding-right:136px;
+}
+div.student_modal .street{
+padding-right:186px;
+}
+div.student_modal .district{
+padding-right:192px;	
+}
+.loading{
+	background: yellow;
+float: 2px;
+padding: 2px;
+margin: 0 267px;
+display: none;
+}
+.modal_options{
+	float: right;
+	display: inline;
+	margin: 0 8px;
+}
+.modal_options li{
+	border-bottom: 1px solid #eee;
+}
+
+.staff-edate{
+	padding-right:18px;
+}
+.staff-rank{
+	padding-right:160px;
+	margin-left: 112px;
+}
+.staff-employ{
+	padding-right:106px;
+}
+.staff-role{
+	padding-right:170px;
+}
+.staff-status{
+	padding-right:148px;
+}
+
+.staff-hquali{
+	padding-right:57px;
+}
+.staff-oquali{
+	padding-right:112px;
+}
+.staff-fieldt{
+	padding-right:92px;
+}
+.staff-levelt{
+	padding-right:88px;
+}
+.staff-year{
+	padding-right:148px;
+}
+.student_profile span{
+	font-weight: normal;
+	margin:2px;
+	padding:8px;
+}
+.entry-typing input, .entry-typing select{
+margin-bottom: 0;
+}
+.inputzone , .inputzone > div{
+	display: inline;
+	position: relative;
+}
+ .inputzone > div > span{
+ 	position: absolute;
+ 	padding: 5px;
+	text-transform: capitalize;
+	color: #999;
+s
+ }
+
+ .show{
+ 	display: block;
+ }
+ .hide{
+ 	display: none;
+ }
+/*placeholders styling starts here*/
+#placehold-schoolname{
+	left: 0;
+}
+#placehold-capacity{
+	left:225px;
+}
+/*placeholders styling stops here*/

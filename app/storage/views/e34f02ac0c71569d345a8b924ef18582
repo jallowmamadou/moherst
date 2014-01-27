@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>my awesome url shortener</title>
+	<style type="text/css">
+	.error{
+		color:red;
+		font-style: italic;
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<?php echo $__env->yieldContent('container'); ?>
+	</div>
+</body>
+</html>

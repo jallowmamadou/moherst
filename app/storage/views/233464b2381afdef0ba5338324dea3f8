@@ -1,0 +1,24 @@
+<?php echo $__env->make('_partials/doc', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+	<?php $__env->startSection('style'); ?>
+		<!-- <?php echo HTML::style('assets/dist/css/bootstrap.min.css'); ?>		 -->
+	<?php echo HTML::style('css/start-main.css'); ?>		 
+	<?php echo HTML::style('css/start-style.css'); ?>	 
+	<?php echo $__env->yieldSection(); ?>
+       
+    </head>
+    <body>
+    	<div class="top">
+<!--     		<?php $__env->startSection('top'); ?>
+    			@parent
+    		<?php echo $__env->yieldSection(); ?> -->
+    		<?php echo $__env->yieldContent('top'); ?>
+    	</div>
+	    <div class="container">
+	    	<?php echo $__env->yieldContent('container'); ?>
+	    </div>
+	    <footer>
+	    	<div class="hedacont">MOHERST &copy; Copyright 2013</div>
+	    	<?php echo $__env->yieldContent('footer'); ?>
+	    </footer>
+	    	<?php echo $__env->yieldContent('script'); ?>
+<?php echo $__env->make('_partials/footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

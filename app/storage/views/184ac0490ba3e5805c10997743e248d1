@@ -1,0 +1,7 @@
+
+<?php $__env->startSection('container'); ?>
+	<h1>Here is your short url!</h1>
+	<?php echo HTML::link($shortened,"http://localhost/url-shortener/public/$shortened"); ?>	
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

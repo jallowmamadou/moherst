@@ -1,0 +1,50 @@
+<?php $__env->startSection('style'); ?>
+	@parent
+	
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('top'); ?>
+	<div class="top_bar_container">
+		<div class="top_bar_inner top_bar_style">
+			<div class="top_bar_up">
+				<h2>WELCOME TO HIGHER EDUCATION MANAGEMENT INFORMATION SYSTEM (HEMIS)</h2>
+			</div>
+			<div class="navbar">
+				<ul class="nav nav-pills">
+					  <li>
+					    <a href="http://moherst.gov.gm/">MoHERST</a>
+					  </li>
+					  <li><a href="http://moherst.info/">MOHERST INFO</a></li>
+					  <li><a href="http://dev.moherst.info/">DEV</a></li>
+					  <li><a href="http://apps.moherst.info/">APPS</a></li>
+					  <li><a href="http://hemis.moherst.info/">HEMIS</a></li>
+					  <li><a href="http://app.moherst.info/">APP</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('container'); ?>
+	<div class="content">
+		<div class="signin">
+			<h2 class="form-signin-heading">Please sign in</h2>
+			    <?php if (Session::has('flash_error')): ?>
+			        <div id="flash_error"><?php echo Session::get('flash_error'); ?></div>
+			    <?php endif; ?>
+			<?php echo Form::open(array('url'=>'login','class'=>'form-signin','id'=>'')); ?>
+				<div class="input-feild">
+					<span class="add-class-name">Username <a href="#" data-toggle="tooltip" title="" data-original-title="A user name unique to you" class="tipify">What is this?</a></span>
+					<?php echo Form::input('text','username','',array('class'=>'input-block-level','placeholder'=>"ENTER USERNAME ",'required'=>'required')); ?>
+					<span  class="add-class-fee">Password</span>
+					<?php echo Form::input('password','password','',array('class'=>'input-block-level','placeholder'=>"ENTER PASSWORD",'required'=>'required')); ?>
+					<?php echo Form::input('submit','signin','Sign In',array('class'=>'btn btn-large btn-primary btn-block pressed')); ?>		        			
+				</div>
+			<?php echo Form::close(); ?>
+		</div>	
+
+	</div>
+
+<?php $__env->stopSection(); ?>
+
+
+
+

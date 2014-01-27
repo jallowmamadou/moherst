@@ -1,0 +1,1085 @@
+/*html, body,
+ol, ul, li, dl, dt, dd, th, td
+form, fieldset, legend, input, button, textarea, blockquote
+h1, h2, h3, h4, h5, h6, p	{
+	margin: 0; padding: 0; 
+} 
+ol, ul 	{ list-style: none; }
+a 		{ margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+table 	{ border-collapse: collapse; border-spacing: 0; }
+del 	{ text-decoration: line-through; }
+sup 	{ vertical-align: super; font-size: smaller; }
+sub 	{ vertical-align: sub; font-size: smaller; }
+input, select 		{ vertical-align: middle; }
+abbr, acronym, dfn 	{ border-bottom: 1px dotted #00f; cursor: help; }
+blockquote p:before, blockquote p:after, q:before, q:after {content: '';}
+
+/*	base style and typo	*
+body	{ 
+	background: #282828;
+	color: #444;
+	font:  13px verdana, arial, helvetica;	
+	letter-spacing: 1px;
+}
+
+select, input, textarea { font: 100.01% "Palatino Linotype", Freeserif, serif; letter-spacing: .05em; }
+pre, tt, code, kbd, samp, var { color: #06f; font-family: "Courier New", Courier, monospace; font-size: 1em; }
+blockquote, q, em, cite, dfn, i, cite, var, address { font-style: italic; }
+th, strong, dt, b { font-weight: bold; }
+
+
+.typo h1, .typo h2, .typo h3, .typo h4, .typo h5, .typo h6, .typo p, pre, dt, dd, li, legend, address { padding-top: 1.2em; }
+hr, input, button, textarea, select, table { margin-top: 1.2em; }
+
+h1	{ font-size: 24px; font-weight: normal; }
+h2	{ font-size: 18px; font-weight: bold; }
+h3	{ font-size: 16px; font-weight: bold; }
+h4, h5, h6	{ font-size: 14px; font-weight: bold; }
+h1, h2, h3, h4, h5, h6 { font-family: verdana, "DejaVu Serif", serif; letter-spacing: .1em; }
+p	{ line-height: 20px; }
+
+img         		{ vertical-align: bottom; }
+a img	    	{ border: none; }
+a:link      	{ color:#607890; }
+a:visited   	{ text-decoration: none; }
+a:hover    	{ color:#036; text-decoration: none; }
+a:focus     	{ text-decoration: none; }
+a:focus,:focus      { outline: 1px dotted #000; }
+a:hover, a:active   { outline: none; }
+
+::-moz-selection	{ background: #FF5E99; color:#fff; text-shadow: none; } /* Safari *
+::selection 			{ background:#FF5E99; color:#fff; text-shadow: none; } /* Firefox */
+
+/* clear of float items *
+.clear	{clear: both; }
+/*LAYOUT
+.container{
+	position:relative;
+}
+.content{
+	width:960px;
+}
+.center{
+	margin:0 auto;
+}
+
+/*SPECIAL EFFECTS*/
+.round28px{
+	-webkit-border-radius: 28px;
+-moz-border-radius: 28px;
+border-radius: 28px;
+}
+.round8px{
+	-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px;
+}
+.round5px{
+	-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+.blueshd28px{
+	-webkit-box-shadow: 0px 0px 28px #000121;
+
+-moz-box-shadow: 0px 0px 28px #000121;
+
+box-shadow: 0px 0px 28px #000121;
+}
+.blueshd8px{
+	-webkit-box-shadow: 0px 0px 8px #000121;
+
+-moz-box-shadow: 0px 0px 8px #000121;
+
+box-shadow: 0px 0px 8px #000121;
+}
+.longinput{
+	    border: 1px solid #29DBE4;
+    padding: 10px 8px;
+    width: 58%;
+	-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+}
+.shortinput{
+		    border: 1px solid #29DBE4;
+    padding: 10px 8px;
+    width: 40%;
+	-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+}
+.round3px{
+		-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+}
+	.arrowfix{
+	height: 0;
+    width: 0;
+    position: absolute;
+    border-top: 6px solid transparent;
+    border-left: 49px solid transparent;
+    border-right: 15px solid #40E701;
+    top: 13px;
+    left: -65px;
+    border-bottom: 8px solid transparent;
+	}
+.arrowdown{
+	height: 0;
+    width: 0;
+    position: absolute;
+    border-top: 24px solid #0071FF;
+    border-left: 34px solid transparent;
+    border-right: 30px solid transparent;
+display: none;
+    border-bottom: 20px solid transparent;
+}
+/*there is a problem with the arrow on wider screens*/
+#s1{
+    display: block;
+    left: 211px;
+    /*    left: 296px;*/
+    top: 90px;
+}
+#s2{
+    display: block;
+    left: 387px;
+    top: 90px;
+}
+#s3{
+    display: block;
+    left: 567px;
+    top: 90px;
+}
+#s4{
+     display: block;
+    left: 741px;
+    top: 90px;
+}
+#s5{
+    display: block;
+    left: 909px;
+    top: 90px;
+}
+.act{
+		-webkit-box-shadow: 0px 0px 8px #000121;
+
+-moz-box-shadow: 0px 0px 8px #000121;
+
+box-shadow: 0px 0px 8px #000121;
+}
+/*MAIN STYLES*/
+.paper{
+	background: #fff;
+    border: 10px solid #0071FF;
+    margin: 20px 0;
+    overflow: hidden;
+    padding:10px 0;	
+}
+.hder{
+	background: #29DBE4;
+    border-bottom: 1px solid #006FFD;
+    margin: -10px 0 10px;
+    padding: 18px 10px;
+    text-transform: capitalize;
+}
+#login{
+margin:50px auto;
+width: 550px;
+}
+#login a,#signup a{
+		padding:0 10px;
+color:#FE0211;
+text-decoration: none;
+}
+#login a:hover,#signup a:hover{
+	text-transform: capitalize;
+	font-weight: bold;
+}
+#login input,#signup input {
+	font-family: verdana,arial,helvetica;
+}
+form.lsform{
+    padding:10px;
+}
+.lsform td.labels {
+    text-transform: capitalize;
+font-size: 1.7em;
+text-align: right;
+}
+.lsform input, .lsform select{
+    margin:0;
+}
+div.bd input, div.bd select{
+        border: 1px solid #29DBE4;
+    border-radius: 3px 3px 3px 3px;
+    padding: 10px 8px;
+}
+input.snb{
+    text-align: center;
+margin: auto 145px;
+display: block;
+}
+.lsform div.intp{
+    padding:10px 2px;
+    /*margin:15px 1px;*/
+    /*border-bottom: 1px solid #E1E1E1;*/
+}
+#login label,#signup label{
+	font-size: 2em;
+}
+#login > form,#signup > form{
+	padding:5px 10px;
+}
+#login br,#signup br{
+	display: block;
+	margin:10px;
+}
+#subbtn{
+	    background:#40E701;
+    border: 1px solid #006FFD;
+    color: white;
+    /*margin: -100px 44% 0;*/
+    padding: 9px 2%;
+    cursor: pointer;
+}
+#subbtn:hover{
+	-webkit-box-shadow: 0px 0px 8px #000121;
+
+-moz-box-shadow: 0px 0px 8px #000121;
+
+box-shadow: 0px 0px 8px #000121;	
+}
+.help{
+	    border: 1px solid #40E701;
+    display: inline;
+    float: right;
+    margin: 10px 35px 0;
+    padding: 10px;
+    width: 275px;
+    position: relative;
+    background: #40E701;
+    display: none;
+}
+/*jquery add classes help and fixthing*/
+.btnn{
+	    background: none repeat scroll 0 0 #0071FF;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border:1px solid #40E701;
+    cursor: pointer;
+}
+/*.ve{
+	border:1px solid #e1e1e1;
+	padding:5px;
+	margin:0 50px;
+	overflow: hidden;
+}
+.topp{
+	margin:0 85px;
+}
+.topp a,.topp div{
+	float: left;
+	display: inline;
+}
+.topp > a{
+	padding:5px;
+	border: 1px solid #e1e1e1;
+	margin: 0 10px;
+}
+.udetails{
+    margin: 0 10px;
+    padding: 0 10px;	
+}
+
+nav#venav{
+	clear: both;
+}*/
+.ve{overflow: hidden;}
+#userbox{
+	background: white;
+	border: 5px solid #0071FF;
+	border-top: none;
+	overflow: hidden;
+}
+.topp, nav#venav ,#vedanav{
+	overflow: hidden;
+}
+.topp > div{
+	float:left;
+	display: inline;
+	border: 1px solid #E1E1E1;
+	border-top: none;
+}
+.userd{
+	width:160px;
+}
+.userd > a{
+	display: block;
+}
+.userd > a >img{
+	width: 100%;
+}
+.userinfo{
+	width: 520px;
+	padding:5px 5px;
+
+}
+.userinfo span{
+	font-weight: bold;
+}
+.username{
+    font-size: 2em;
+    margin: 3px 0 10px;
+    text-transform: capitalize;
+}
+.departd{
+width:160px;
+}
+.departd > a{
+	display: block;
+
+
+}
+.departd > a >img{
+	width: 100%;
+}
+.atype{
+  margin: 5px 0;
+    text-transform: capitalize;
+}
+.prev{
+padding:5px 0;
+}
+.set{
+    border-bottom: 1px solid #E1E1E1;
+    margin: 10px 0;
+    padding: 5px;	
+
+	text-transform: capitalize;
+}
+.set a{
+		text-decoration: none;
+	color: red;
+	/*float: right;*/
+	padding:5px;
+}
+nav#vedanav{
+border-top:1px solid #e1e1e1;
+}
+nav#venav > ul {
+
+}
+nav#venav > ul li,#vedanav > ul li{
+	float:left;
+	display:inline;
+	margin-top: -16px;
+	position: relative;
+}
+nav#venav > ul li > a  {
+    display: block;
+	border: 1px solid #e1e1e1;
+    padding: 13px 120px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 0.88em;
+    color:white;
+}
+#drop{
+    border: 1px solid #282828;
+    cursor: pointer;
+    display: block;
+    margin: 0 439px;
+    overflow: hidden;
+    padding: 4px;
+    text-align: center;
+    width: 50px;
+    display: none;
+
+}
+nav#venav > ul li > a:hover,#vedanav > ul li > a:hover,#vedanav > ul li > a.active {
+background: #0071FF;
+color: white;
+}
+#vedanav > ul li > a{
+    display: block;
+padding: 13px 57px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 0.88em;
+    color:inherit;
+    font-weight: bold;	
+}
+#display{
+    /*overflow: hidden;*/
+    margin-top: 40px;
+}
+/*search area*/
+#search{
+	margin:40px 0;
+}
+.searcharea{
+	margin:20px 35px;
+}
+.searcharea form{
+ color:#e1e1e1;
+}
+.searcharea form > input#srch{
+    padding: 10px;
+    width: 72%;
+    font-size: 1.2em;
+    font-family: verdana,arial;
+    border: 2px solid #C7E2F1;
+}
+.searcharea form > input#srchbtn{
+    padding: 9px 30px;
+	cursor: pointer;
+    font-size: 1.2em;
+    font-family: verdana,arial;
+    border: 2px solid #C7E2F1;
+    background: url(../imgs/sh.png) no-repeat scroll center white;
+}
+.searcharea form > input#srchbtn:hover{
+	background-color:#DAE9F1; 
+}
+.searchresults{
+	margin:20px 0;
+	overflow: hidden;
+	  border-bottom: 1px solid #DAE9F1;
+      padding: 5px;
+}
+.asr{
+	padding:20px 5px;
+}
+.asr >h4 a{
+	    color: #3A3838;
+    display: block;
+    margin: 10px 0;
+    text-transform: capitalize;
+}
+.asr a > img {
+    background:black;
+    display: inline;
+    float: left;
+    height: 80px;
+    margin: 5px 8px 10px 0;
+    width: 80px;
+    color: white;
+}
+hr{
+border-color: #C7E2F1;
+ display: block;
+ margin:20px 0;
+}
+.as{
+	    clear: both;
+    display: inline;
+}
+/*designing forms::*/
+#newsch form{
+
+}
+#newsch form > fieldset div {
+margin:10px;
+}
+#newsch form > fieldset{
+        border: 1px solid #E1E1E1;
+    margin: 60px 15px;
+    padding: 5px;
+    position: relative;
+}
+#newsch form > fieldset legend{
+    margin: -52px 0 0 -6px;
+       border-bottom: 30px solid #0071FF;
+    border-right: 30px solid transparent;
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+    height: 0;
+    line-height: 48px;
+    padding: 10px;
+    text-decoration: none;
+    position: absolute;
+    top:2px;
+}
+.diagonalise{
+  border-bottom: 30px solid #0071FF;
+    border-right: 30px solid transparent;
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+    height: 0;
+    line-height: 48px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+#newsch form > fieldset  input, #newsch form > fieldset  select{
+    margin:0;
+}
+#newsch form label{
+    font-size: 1.7em;
+}
+#newsch form > br{
+    display:block;
+    margin:10px 0;
+}
+#newsch form > fieldset > div{
+    margin: 15px 2px;
+}
+.imglike{
+        background: gray;
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+    width: 105px;
+}
+ul#schlist li a.imagelk{ 
+   display: inline;
+    float: left;
+    padding: 10px;
+    text-decoration: none;
+}
+ul#schlist > li{
+        border-bottom: 1px solid #E1E1E1;
+    margin: 20px 5px;
+    padding-bottom: 15px;
+}
+ul#schlist li > a{
+    text-decoration: none;
+}
+ul#schlist li > a:hover{
+    color: red;
+}
+nav.schnav{
+        margin-top: -10px;
+    overflow: hidden;
+    background: #0071FF;
+}
+/*nav.schnav ul{
+    margin-top: -20px;
+    overflow: hidden;
+}*/
+nav.schnav ul > li{
+    display: inline;
+    float: left;
+    list-style: none outside none;
+}
+nav.schnav ul > li >a{
+    background: #0071FF;
+    display: block;
+    padding: 20px 44px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+}
+#school > header{
+    position: relative;
+    background: white;
+        border: 5px solid #0071FF;
+}
+div.dits{
+    padding:10px;
+}
+div.schcontent{
+    clear:both;
+        margin: 37px 0;
+}
+#aboutsch header{
+    border-bottom: 1px solid #E1E1E1;
+    margin: 20px 0;
+    padding: 5px 10px;
+}
+#aboutsch header h3{
+text-transform: capitalize;
+margin:10px 0;
+}
+#aboutsch header h5{
+    text-transform: capitalize;
+  color:#6C6464;
+    display: inline;
+}
+#stats h4{
+        font-size: 1.6em;
+    margin: 20px;
+    text-transform: uppercase;
+}
+div.sinfo{
+    float: left;
+    border:1px solid #e1e1e1;
+    display: inline;
+    position: relative;
+    margin:50px 8px;
+    padding:5px;
+    width: 279px;
+}
+div.sinfo-contact{
+    border:1px solid #e1e1e1;
+    position: relative;
+    margin:50px 8px;
+    padding:5px;
+    width: 90%px;
+}
+.dp{
+      left: -1px;
+    position: absolute;
+    top: -51px; 
+}
+.sinfo span{
+       font-style: italic;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+nav.addnav{
+    clear: both;
+    background: #0071FF;
+    overflow: hidden;
+    margin-bottom: -10px;
+}
+.addnav > ul{
+
+}
+.addnav > ul > li{
+    float: left;
+    display: inline;
+}
+.addnav > ul > li >a {
+padding:15px 70px;
+text-transform: capitalize;
+text-decoration: none;
+background: #0071FF;
+display: block;
+}
+#sda{
+    display: block;
+/*    left: 159px;
+    top: 337px;*/
+}
+.top{
+    padding:5px;
+    overflow: hidden;
+}
+.top > p{
+    float:left;
+    display: inline;
+    padding:5px;
+    margin:2px;
+}
+.useinf{
+    width:727px;
+}
+.useinf > span{
+    font-size: 10px;
+    text-transform: uppercase;
+}
+.useinf > span b{
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.setalog{
+    width:130px;
+}
+.schdetail > span{
+    text-transform: capitalize;
+}
+a.more{
+          background: #0071FF;
+            position: absolute;  
+                padding: 5px;
+                    top: 30px;
+                    color:white;
+                    text-decoration: none;
+                    font-weight: bold;
+
+}
+#jsadd{
+    left: -42px;
+}
+#jsedit{
+    right: -42px;
+}
+/*navigating for schools navs*/
+    body.school nav.schnav > ul > li > a#schl,
+      body.students nav.schnav > ul > li > a#studts,
+        body.courses nav.schnav > ul > li > a#crses,
+          body.lecturers nav.schnav > ul > li > a#lects,
+            body.contact nav.schnav > ul > li > a#contacs,
+              body.finance nav.schnav > ul > li > a#fins{
+        color:white;
+        font-weight: bolder;
+    } 
+    .error ,p.error{
+            color: red;
+    font-weight: bold;
+    /*text-align: center;*/
+    text-transform: capitalize;
+    /*display: inline;*/
+    }
+    .bs{
+        margin: 15px 0;
+border-bottom: 1px solid #E1E1E1;
+padding: 2px;
+    }
+input[type="checkbox"]{
+    display: none;
+}
+input[type="checkbox"] + label span{
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    background: url(../imgs/check_radio_sheet.png) left top no-repeat;
+    cursor: pointer;
+}
+input[type="checkbox"]:checked + label span {
+    background:url(../imgs/check_radio_sheet.png) -19px top no-repeat;
+}
+div#setadd{
+    float: right;
+direction: ltr;
+margin: -32px 0 10px;
+position:relative;
+}
+div#setadd button{
+    background: #fff;
+padding: 5px 20px;
+border: 1px solid #D6D1D1;
+font-size: 1em;
+font-weight: bold;
+cursor: pointer;
+text-transform: capitalize;
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+-webkit-box-shadow: 1px 1px 4px #D3D3D3;
+-moz-box-shadow: 1px 1px 4px #D3D3D3;
+box-shadow: 1px 1px 4px #D3D3D3;
+}
+div#setadd button:hover{
+border:1px solid #E1E1E1;
+}
+
+div#setadd button span{
+    margin: 0 10px;
+    text-shadow: -1px -1px 2px #696969;
+}
+#schnsa{
+    position:relative;
+}
+div#setadd > div{
+    float: left;
+    display: inline;
+    position: relative;
+}
+.droplist{
+    overflow: hidden;
+background: #fff;
+width: 200px;
+padding: 10px;
+border: 1px solid #e1e1e1;
+-webkit-box-shadow: 0 2px 4px #D3D3D3;
+-moz-box-shadow: 0 2px 4px #D3D3D3;
+box-shadow: 0 2px 4px #D3D3D3;
+position:absolute;
+right:-5px;
+top:52px;
+display: none;
+
+}
+ul.droplist li{
+   padding:0;
+   margin: 0;
+}
+ul.droplist li > a{
+   display:block;
+   text-decoration: none;
+   text-transform: capitalize;
+   color:black;
+   border-bottom: 1px solid #E1E1E1;
+   padding:10px 5px;
+}
+ul.droplist li > a:hover{
+    background: #0071FF;
+    color:#fff;
+}
+/*designing tables*/
+
+table{
+    border-collapse: collapse;
+    width:100%;
+}
+thead{
+    width:100%;
+    /*position:fixed;*/
+
+}
+tr{
+    cursor:pointer;
+}
+td{
+    border:1px solid #ccc;
+    padding:5px;
+}
+ tbody tr:nth-child(2n+1) td{
+   background: #F9F9F9; 
+}
+.show{
+    display:block;
+    visibility: visible;
+}
+.hide{
+       display:none;
+    visibility: hidden; 
+}
+.hover{
+    /*background: red;*/
+}
+tbody tr:hover{
+    background: #EEF5C7;
+}
+ tbody tr:nth-child(2n+1) td:hover{
+    background: #EEF5C7;
+ }
+   /*modal styles*/
+    /*reseting the modal done elements*/
+    #landing{
+        position:fixed;
+        display:none;
+        z-index: 2000;
+        margin:-36px 36px;
+        top:84px;
+        /*padding:20px;*/
+      border:1px solid #E1E1E1;
+-webkit-box-shadow: 2px 2px 7px #C0C0C0;
+-moz-box-shadow: 2px 2px 7px #C0C0C0;
+box-shadow: 2px 2px 7px #C0C0C0;
+    }
+      div#modalzone{
+        color:#1B1A1F;
+        background: white;
+        padding:10px;
+/*        -webkit-box-shadow: 3px 3px 12px #D3D3D3;
+-moz-box-shadow: 3px 3px 12px #D3D3D3;
+box-shadow: 3px 3px 12px #D3D3D3;*/
+/*        border:1px solid #E1E1E1;
+-webkit-box-shadow: 2px 2px 7px #C0C0C0;
+-moz-box-shadow: 2px 2px 7px #C0C0C0;
+box-shadow: 2px 2px 7px #C0C0C0;*/
+      }
+      div#modalzone form{
+
+      }
+      div#modalzone form ul{
+        list-style: none;
+        padding:0;
+      }
+      div#modalzone form ul > li{
+        border-bottom: 1px solid #CFCFCF;
+        clear: both;
+        padding:10px 5px;
+      }
+      div#modalzone form ul input{
+        border-style:none;
+        /*color:#1B1A1F;*/
+        font-weight: bold;
+       /*margin:0;*/
+         vertical-align: baseline;
+      }
+      div#modalzone form  label{
+        color:#828083;
+        text-transform: capitalize;
+      }
+      div#modalzone a{
+        text-decoration: none;
+      }
+
+      #modalzone{
+        border: 1px solid #CFCFCF;
+        width: 840px;
+        font-family: verdana,arial;
+      }
+
+      .tbhsn{
+        margin-top:-16px;
+        padding:2px;
+         background: #222222;
+         overflow: hidden;
+      }
+      .tbhsn > div{
+        float:left;
+        display: inline;
+        margin: 0 18px;
+      }
+      div.cingdv{
+        float: right;
+        padding: 4px;
+        cursor: pointer;
+        font-family: verdana,arial;
+      }
+      .tbhsn,.tbhsn input,.tbhsn select{
+        background: #222222;
+        color: #F7FEF6;
+        text-transform: capitalize;  
+        border-style: none;     
+      }
+      .cinf{
+        background: white;
+        color: black;
+        border:1px solid #CFCFCF;
+      }
+      .stddtls input,.stddtls select{
+        font-size: 1.1em;
+        text-transform: capitalize;
+        padding: 2px;
+        border-style:none;
+      }
+      .stddend{
+        background: #F5F5F5;
+        overflow: hidden;
+      }
+      .stddend input{
+        /*round corners*/
+        /*background: #A0C1F6;*/
+        background: #357AE8;
+        text-align: center;
+        text-transform: capitalize;
+        border: 1px solid #E0EDFF;
+        color: white;
+        font-weight: bold;
+        padding:8px;
+      }
+      .stddend div.dlstd{
+        float:right;
+        margin-top:-28px;
+      }
+      .stddend div.dlstd a{
+        /*color:#D14836;*/
+        color: red;
+      }
+      #dtlz{
+        display: none;
+      }
+      .overlay{
+        position:fixed;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        z-index:1040;
+        background-color:#000;
+        width:100%;
+        height:100%;
+      }
+      .transparency{
+        z-index: 700;
+        opacity: 0.8;
+        -khtml-opacity: 0.8;
+        -moz-opacity:0.8;
+        filter: alpha(opacity=80);
+      }
+    /*modal styles ends*/
+/*footer here*/
+footer{
+    color:white;
+}
+.schooldetails{
+display:none;
+}
+/*adding school*/
+    /*reseting zone*/
+        div#add_student fieldset, div#add_student legend, div#add_student input, div#add_student select, .inputlike{
+            border-style: none;
+            margin: 0;
+            padding:0;
+            font-family: verdana, arial, helvetica;
+            direction: ltr;
+        }
+/*        div#add_student label{
+
+        }*/
+        div#add_student input[type=text],
+        div#add_student input[type=tel],
+        div#add_student input[type=number],
+        div#add_student input[type=date]
+        {
+            height:20px;
+            padding: 0 8px;        
+            border:1px solid #b9b9b9;
+             border-top: 1px solid #a0a0a0;
+        }
+
+    /*end of reseting zone*/
+div#add_student {
+   margin: 0 1px;
+}
+div#add_student div.addStudentHeader h4{
+text-transform: capitalize;
+}
+div#dataview{
+    margin: 0 0 0 40px;
+    background: pink;
+}
+form#addingStudent > div{
+    margin:18px 0 0 20px;
+}
+form#addingStudent legend strong{
+    text-transform: capitalize;
+    margin: 0 0 0.5em 0;
+    display: inline-block;
+}
+div#add_student form#addingStudent select{
+    display: inline-block;
+    width: 168px;
+    height:20px;
+    text-transform: capitalize;
+    border:1px solid #b9b9b9;
+}
+div#add_student div.dateOfBirth {
+ margin:0 0 20px 0;
+}
+div#add_student div.gender {
+    display:inline;
+    text-transform: capitalize;
+}
+div#add_student input[type=submit]{
+    padding: 10px;
+    background: blue;
+    color: white;
+    cursor: pointer;
+}
+/*general stlying classes*/
+    .drop {
+        display:block;
+        margin:5px 0;
+    }
+    /*styling for entered student*/
+    #dataview > ul {
+
+    }
+    #dataview  ul.optionplate > li{
+        float:left;
+    }
+    #dataview  ul.optionplate > li > a{
+        display:block;
+        padding:10px;
+    }
+    .belowdisplay {
+        clear: both;
+    }
+    .belowdisplay ul.hd > li{
+        float:left;
+        padding: 8px;
+        margin: 0 72px;
+    }
+    .enterstudent >li > span {
+        margin: 0 40px;
+        text-align: center;
+
+    }
+    .enterstudent >li > span > a {
+        width: 70px;
+    }

@@ -1,0 +1,141 @@
+.top_bar_container {
+	position: relative;
+	width: 100%;
+	min-height: 40px;
+	margin: 20px 0;
+	z-index: 8888;
+}
+.top_bar_inner{
+	width: inherit;
+	position: fixed;
+	top:0;
+}
+.top_bar_style{
+  display: block;
+  margin: 0 0 10px;
+  font-size: 12px;
+  line-height: 20px;
+  word-break: break-all;
+  word-wrap: break-word;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+.top_bar_up{
+background: #0071FF;
+border-bottom: 1px solid #e5e5e5;
+color:#fff;
+padding: 5px;
+}
+.top_bar_up > span{
+	text-transform: uppercase;
+}
+.top_bar_up > b{
+	text-transform: capitalize;
+	font-size: 16px;
+}
+.top_bar_down{
+	
+}
+.content{
+	border: 1px solid #e1e1e1;
+	padding: 4px;
+	display: block;
+	overflow: hidden;
+	margin: 20px 2px;
+	background: white;
+}
+.content > .header >.schoolheader {
+position: relative;
+background: white;
+/*border: 5px solid #0071FF;*/
+/*background: red;*/
+margin: 10px 0;
+}
+.buttondrops{
+	display: inline-block;
+direction: ltr;
+float: right;
+margin: -41px 133px;
+}
+.schoolcontent{
+	padding:5px;
+	margin: 20px;
+	border:1px solid #ddd;
+
+-webkit-box-shadow: -1px -1px 15px #e1e1e1;
+-moz-box-shadow: -1px -1px 15px #e1e1e1;
+box-shadow: -1px -1px 15px #e1e1e1;
+}
+.roundcorners{
+	-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+}
+.school_details_sumarry {
+
+}
+.school_details_sumarry > strong{
+	margin:0 23px 0 0;
+}
+.school_details_sumarry > small{
+	text-transform: uppercase;
+	font-weight: normal;
+}
+.schoolcontent > .header{
+	padding:6px;
+}
+.school_display{
+	padding:4px;
+}
+.school_nav_content{
+	border: 1px solid #ddd;
+border-top: none;
+margin: -20px 0 0 0;
+padding:8px;
+}
+.bs-docs-example {
+position: relative;
+margin: 15px 0;
+padding: 39px 19px 14px;
+background-color: #fff;
+border: 1px solid #ddd;
+
+}
+.bs-docs-example:after {
+content: "Example";
+position: absolute;
+top: -1px;
+left: -1px;
+padding: 3px 7px;
+font-size: 12px;
+font-weight: bold;
+background-color: #f5f5f5;
+border: 1px solid #ddd;
+color: #9da0a4;
+}
+.signin{
+margin: 10px 426px;	
+}
+.pack-style{
+	margin: 10px 5px;
+}
+.pack-style p.help-block {
+	margin: 5px 0 18px 3px;
+}
+.pack-style input, .pack-style span.add-on {
+	height:32px;
+	line-height: 2em;
+}
+.signin{
+margin: 0 auto;
+display: block;
+overflow: hidden;
+width: 498px;
+
+}
+.signin form input[type="text"],.signin form input[type="password"] {
+	height:40px;
+}
+.signin form {
+	margin: 0;
+}
